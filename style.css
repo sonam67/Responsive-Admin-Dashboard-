@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    width: fit-content;
+}
+
+.col1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.col1 i {
+    font-size: 32px;
+}
+
+.col2 {
+    width: 25%;
+    padding: 20px;
+    background-color: aliceblue;
+    
+}
+
+.col2 .second {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col2 .second img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.col2 .second .name {
+    margin-top: 20px;
+}
+
+.col2 .second .name h1 {
+    font-size: 1.5rem;
+}
+
+.col2 .second .name p {
+    font-size: .75rem;
+}
+
+.col2 .content {
+    width: 100%;
+    height: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.content p {
+    font-weight: 600;
+    color: gray;
+}
+
+.transection {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.transection h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+}
+
+.transection .payment {
+    margin: 5px 0;
+}
+
+.transection h4 {
+    font-size: 0.8rem;
+}
+
+.col2 .transection p {
+    color: rgb(165, 164, 164);
+    font-size: .7rem;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.col3 {
+    width: 40%;
+    padding: 20px;
+}
+
+.col3 .year h3 {
+    color: blue;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.col3 .year h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+.col3 .goal{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.col3 .goal .goal-box{
+    width: 30%;
+    border-bottom: 2px solid rgb(159, 159, 159);
+    padding: 10px;
+}
+
+.col3 .goal .goal-box p{
+    font-size: .7rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.col3 .goal h1{
+    font-size: 1rem;
+}
+
+.col3 .chart{
+    margin-top: 50px;
+}
+
+.col3 .chart .goal p{
+    font-size: .7rem;
+}
+.col3 .chart .goal span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(18, 20, 20);
+}
+
+.col3 .compare{
+    margin-top: 50px;
+}
+
+.col3 .compare h2{
+    font-size: 1.2rem;
+}
+
+.col3 .compare > p{
+    font-size: .7rem;
+    color: gray;
+}
+
+.col3 .compare .second{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.col3 .compare .second img{
+    height: 100px;
+}
+
+.col3 .compare .second .detail h3{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.col4{
+    width: 25%;
+    padding: 20px;
+}
+
+.col4 .poll-container{
+    background-color: rgb(237, 242, 245);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+.col4 .poll-container > h3{
+    margin: 10px 0;
+    font-weight: 500;
+    color: #343434;
+}
+
+.col4 .option{
+    margin: 20px 0;
+}
+
+.col4 .option h4{
+    margin: 5px 0;
+    font-weight: 500;
+    color: #343434;
+}
+
+.col4 .progress-bar{
+    display: flex;
+}
+
+.col4 .progress{
+    background-color: blue;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.temp{
+    border-left: 2px solid blue;
+    padding-left: 10px;
+}
+
+.temp p{
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .main{
+        flex-direction: column;
+    }
+    .col1, .col2, .col3, .col4{
+        width: 100%;
+    }
+    .col1{
+        flex-direction: row;
+        height: fit-content;
+        justify-content: space-between;
+        background-color: aliceblue;
+        box-shadow: 2px 2px 10px #00000054;
+        position: fixed;
+        bottom: 0;
+
+    }
+    .col1 div{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .col2 .second{
+        flex-direction: column;
+        text-align: center;
+    }
+    .col2 .second img{
+        margin: auto;
+    }
+
+    .col3 .second{
+        flex-direction: column;
+    }
+    .col3 .second .detail{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .col4{
+        margin-bottom: 20%;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Layout with Sidebar</title>
+  <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class=" col1">
+      <i class="fas fa-butterfly icon icon-blue"></i>
+      <div>
+        <i class="fas fa-search icon"></i>
+        <i class="fas fa-home icon icon-blue"></i>
+        <i class="fas fa-book icon"></i>
+        <i class="fas fa-user icon"></i>
+        <i class="fas fa-bars icon"></i>
+      </div>
+    </div>
+    <div class=" col2">
+      <div class="second">
+        <img src="profile.jpeg" alt="Profile Image">
+        <div class="name">
+          <h1>Hey Mike!</h1>
+          <p>Welcome back..</p>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Today</h3>
+        <div>
+          <h1>$19,892</h1>
+          <p>Account Balance</p>
+        </div>
+        <div>
+          <h3>$4,000</h3>
+          <p>Year-to-Date Contributions</p>
+        </div>
+        <div>
+          <h3>$1,892</h3>
+          <p>Total Interest</p>
+        </div>
+        <button class="btn">I want to</button>
+      </div>
+      <div class="transection">
+        <h3>Recent Transections</h3>
+        <div class="payment">
+          <p>2020-07-21</p>
+          <h4>Withdrawal Transfer to Bank-XXX11</h4>
+        </div>
+        <div class="payment">
+          <p>2020-07-16</p>
+          <h4>Withdrawal Transfer to Bank-XXX11</h4>
+        </div>
+        <div class="payment">
+          <p>2020-07-03</p>
+          <h4>Withdrawal Transfer to Bank-XXX11</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col3">
+      <div class="year">
+        <h3>Retirement Income</h3>
+        <h2>Starting Year 2056</h2>
+        <div class="goal">
+          <div class="goal-box">
+            <h1>$300,000</h1>
+            <p>My Goal</p>
+          </div>
+          <div class="goal-box">
+            <h1>$59%</h1>
+            <p>Goal Achieved</p>
+          </div>
+          <div class="goal-box">
+            <h1>$300</h1>
+            <p>Est, Income</p>
+          </div>
+        </div>
+      </div>
+      <div class="chart">
+        <h3>Contributions Overtime</h3>
+        <div class="goal">
+          <p>Employer: <span class="sub-head">K 7300</span></p>
+          <p>Employee: <span class="sub-head">K 52,500</span></p>
+          <p>Total Interest: <span class="sub-head">K 244.313</span></p>
+        </div>
+        <div id="chartContainer" style="height: 150px; width: 100%;">
+          <canvas id="myChart"></canvas>
+        </div>
+
+      </div>
+      <div class="compare">
+        <h2>How do I compare to my peers?</h2>
+        <p>These numbers represent current goal achievement</p>
+        <div class="second">
+          <div class="detail">
+            <h3>Age: Under 30</h3>
+            <h3>Salary: K 20 - K 30</h3>
+            <h3>Gender: Male</h3>
+          </div>
+          <img src="./myimg.jpeg"></img>
+
+        </div>
+      </div>
+    </div>
+    <div class="column col4">
+      <div class="poll-container">
+        <h3>Retirement Strategy</h3>
+
+        <div class="option">
+          <h4>Employee Contribution</h4>
+          <div class="progress-bar">
+            <div class="progress" style="width: 20%;"></div>
+            20%
+          </div>
+        </div>
+
+        <div class="option">
+          <h4>Retirement Age</h4>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%;"></div>
+            40%
+          </div>
+        </div>
+
+        <div class="option">
+          <h4>Employer Contribution</h4>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%;"></div>
+            40%
+          </div>
+        </div>
+        <button class="btn" style="align-items: center;">Update</button>
+        <h3 style="color: blue; text-align: center;">View Help Docs ></h3>
+      </div>
+      <div style="height: 50%; padding: 20px;">
+        <hr>
+        <div class="temp">
+          <p style="font-size: large; margin-top: 10%;">Are you considering a</p>
+          <h2 style="margin-top: 0%;">Housing Advance?</h2>
+          <p style="color: rgb(167, 167, 167);">Limited time reduced interest.</p>
+          <h2 style="color: blue;">Learn More ></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
